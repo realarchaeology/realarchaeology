@@ -256,3 +256,121 @@
     </div>
   </div>
 </div>
+
+
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+<meta name="author" content="#Real-Archaeology" />
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Bootstrap Icons-->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+<!-- Google fonts-->
+<link
+  href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+  rel="stylesheet"
+  type="text/css"
+/>
+<!-- SimpleLightbox plugin CSS-->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+  rel="stylesheet"
+/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+
+<!-- Font Awesome CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+
+<!--Title etc-->
+<title>Histourian - your guide through history</title>
+<meta
+  name="description"
+  content="Discover the true significance of historical sites with Histourian! Our app provides expertly written and meticulously researched historical tours for various sites. Enjoy convenient narration, offering a private guide experience to uncover the rich history of each location. Don't settle for a basic tour – enhance your visit with Histourian today!"
+/>
+<link rel="canonical" href="https://histourianapp.com/" />
+
+<!-- Favicon -->
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="assets/favicon-16x16.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="assets/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="48x48"
+  href="assets/favicon-48x48.png"
+/>
+
+<!-- Apple Touch Icon -->
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="assets/favicon-180x180.png"
+/>
+
+<!-- Favicon for Windows Tiles -->
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta
+  name="msapplication-TileImage"
+  content="https://histourianapp.com/assets/favicon-150x150.png"
+/>
+
+<!--OG-->
+<meta property="og:url" content="https://histourianapp.com/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="
+  Histourian - your guide through history
+"
+/>
+<meta
+  property="og:description"
+  content="Discover the true significance of historical sites with Histourian! Our app provides expertly written and meticulously researched historical tours for various sites. Enjoy convenient narration, offering a private guide experience to uncover the rich history of each location. Don't settle for a basic tour – enhance your visit with Histourian today!"
+/>
+<meta
+  property="og:image"
+  content="https://histourianapp.com/assets/img/og-banner.png"
+/>
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+  name="twitter:title"
+  content="
+  Histourian - your guide through history"
+/>
+<meta
+  name="twitter:description"
+  content="Discover the true significance of historical sites with Histourian! Our app provides expertly written and meticulously researched historical tours for various sites. Enjoy convenient narration, offering a private guide experience to uncover the rich history of each location. Don't settle for a basic tour – enhance your visit with Histourian today!"
+/>
+<meta name="twitter:site" content="@DUAncientAliens" />
+<meta
+  name="twitter:image"
+  content="https://histourianapp.com/assets/img/og-banner.png"
+/>
+<meta name="twitter:creator" content="@histourianapp" />
