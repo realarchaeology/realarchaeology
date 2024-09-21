@@ -1,0 +1,533 @@
+/* styles.css */
+
+/* Customize navbar background color */
+.navbar {
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+/* Change background on scroll */
+.navbar.scrolled {
+  background-color: #f8f9fa !important;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 5.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+  transition: color 0.3s;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a8120d;
+}
+
+/* Add padding to navbar content on desktop screens */
+@media (min-width: 992px) {
+  .navbar .container-fluid {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+/* Custom Spacing Class */
+.section-spacing {
+  padding-top: 9rem; /* Increased top padding */
+  padding-bottom: 9rem; /* Increased bottom padding */
+}
+
+/* Optional: Responsive Spacing */
+@media (max-width: 576px) {
+  .section-spacing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Carousel Full-Screen Styling */
+#landingCarousel {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; /* Images are behind the text */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Caption is above the images */
+}
+
+/* Carousel Content Styling */
+.carousel-content {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Optional background for better readability */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* padding: 20px; */
+  /* border-radius: 10px; */
+}
+
+/* Subheading Styling */
+.carousel-content .subheading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem; /* Adjust as needed */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Main Heading Styling */
+.carousel-content h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 4rem; /* Increase font size for larger heading */
+  /* margin-bottom: 1rem; */
+}
+
+/* Paragraph Styling */
+.carousel-content p {
+  font-size: 1.25rem;
+}
+
+/* Adjust content under navbar */
+body {
+  margin-top: 0;
+}
+
+/* Adjust content under navbar */
+body {
+  margin-top: 0;
+}
+
+/* About Section Styling */
+/* About Section */
+#about {
+  padding: 0 0 0 0; /* Remove bottom padding */
+  overflow: hidden; /* Prevent margin collapsing */
+}
+
+/* Remove bottom margin from the last child */
+#about .about-container > *:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Vertically center items */
+}
+
+#about .about-heading {
+  background-color: #a8120d;
+  color: #fff;
+  padding: 20px;
+  flex: 1 1 100%;
+}
+
+#about .about-content {
+  padding: 10px;
+  flex: 1 1 100%;
+}
+
+@media (min-width: 992px) {
+  #about .about-container {
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+  }
+
+  #about .about-heading {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 380px; /* Fixed height for red box */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  #about .about-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 50px;
+  }
+
+  #about .about-content p {
+    margin: 0;
+    text-align: center; /* Center text */
+  }
+}
+
+#about h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 600px; /* Set a max-width for better readability */
+}
+
+@media (max-width: 991.98px) {
+  #about .about-content {
+    text-align: center;
+  }
+}
+
+/* Event Section Styling */
+.event-section {
+  background-image: url("path-to-your-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  position: relative;
+}
+
+/* Event Header Box */
+.event-header-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.event-header-box h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Event Section Styling */
+.event-section {
+  background-image: url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  position: relative;
+  min-height: 500px; /* Ensure the section has height */
+}
+
+/* Event Header Box */
+.event-header-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  max-width: 350px; /* Set max-width to 350px */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.event-header-box h2 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #a8120d;
+  font-family: "Oswald", sans-serif;
+}
+.event-header-box h6 {
+  margin: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  font-family: "Anton", sans-serif;
+}
+
+/* Event Content Box */
+.event-content-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  max-width: 350px; /* Set max-width to 350px */
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+}
+
+.event-content-box p {
+  margin: 0 0 20px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* Countdown Styling */
+#countdown {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#countdown h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+#countdown small {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 576px) {
+  #countdown .d-flex {
+    flex-direction: column;
+  }
+
+  #countdown div {
+    margin-bottom: 15px;
+  }
+}
+
+/* View Agenda Button */
+.btn-agenda {
+  display: inline-block;
+  background-color: #a8120d;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-agenda:hover {
+  background-color: #8e0f0b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+  .event-header-box,
+  .event-content-box {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .event-header-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-content-box p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Speakers Section Styling */
+#speakers h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+#speakers p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.speaker-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.speaker-card:hover {
+  transform: translateY(-10px);
+}
+
+.speaker-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.speaker-card h5 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.speaker-card a {
+  color: #a8120d;
+  text-decoration: none;
+}
+
+.speaker-card a:hover {
+  text-decoration: underline;
+}
+
+/* Section Header Styling */
+#schedule .section-header {
+  background-color: #a8120d; /* Red background */
+  color: #fff; /* White text */
+  padding: 40px 0; /* Vertical padding */
+  text-align: center;
+}
+
+#schedule .section-header h2 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+/* Schedule Section */
+#schedule {
+  padding: 0 0 60px 0; /* Remove top padding, keep bottom padding */
+}
+
+#schedule .schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 40px 0; /* Add vertical padding */
+}
+
+#schedule .schedule-content {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 0 20px; /* Horizontal padding */
+}
+
+@media (min-width: 992px) {
+  #schedule .schedule-image {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  #schedule .schedule-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 20px;
+  }
+}
+
+/* Day Buttons */
+.day-buttons {
+  text-align: center;
+  margin-bottom: 30px; /* Increase bottom margin */
+}
+
+.day-buttons .btn-day {
+  background-color: #a8120d;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  padding: 12px 20px; /* Increase padding */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1rem; /* Increase font size */
+}
+
+/* Schedule Details */
+.schedule-details {
+  margin-top: 20px;
+}
+
+.time-slot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px 0; /* Increase vertical padding */
+}
+
+.time-slot .time {
+  flex: 0 0 25%; /* Increase time width */
+  max-width: 25%;
+  font-weight: bold;
+  font-size: 1.1rem; /* Increase font size */
+}
+
+.time-slot .description {
+  flex: 0 0 75%; /* Adjust description width */
+  max-width: 75%;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.time-slot + hr {
+  border: 0;
+  border-top: 1px dotted #a8120d;
+  margin: 0;
+}
+
+.schedule-details hr {
+  margin: 0; /* Ensure no extra margin */
+}
+
+@media (max-width: 768px) {
+  .time-slot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time-slot .time,
+  .time-slot .description {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Images on Each Side */
+.schedule-image {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.schedule-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .schedule-image {
+    flex: 0 0 20%; /* Adjust as needed */
+    max-width: 20%;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .schedule-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
