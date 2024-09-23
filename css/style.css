@@ -345,9 +345,9 @@ body {
 
 /* Speakers Section Styling */
 #speakers h2 {
-  font-size: 3.5rem;
+  font-size: 5.1rem;
   font-weight: 700;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "Oswald", Arial;
 }
 
 #speakers p {
@@ -527,5 +527,45 @@ body {
   .schedule-content {
     flex: 0 0 60%;
     max-width: 60%;
+  }
+}
+
+/* Speakers Section Styling */
+#speakers {
+  padding: 110px 0;
+}
+
+#speakers .section-title {
+  text-align: center;
+}
+
+.speakers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between grid items */
+}
+
+@media (max-width: 1200px) {
+  .speaker-card {
+    width: calc(25% - 20px); /* Four cards per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .speaker-card {
+    width: calc(33.333% - 20px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .speaker-card {
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .speaker-card {
+    width: 100%; /* One card per row */
   }
 }
