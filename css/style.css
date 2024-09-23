@@ -3,7 +3,8 @@
 /* BebasNeue Font */
 @font-face {
   font-family: "BebasNeue";
-  src: url("/fonts/BebasNeue.ttf") format("truetype");
+  src: url("https://real-archaeology.com/fonts/BebasNeue.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +12,7 @@
 /* Oswald Font */
 @font-face {
   font-family: "Oswald";
-  src: url("/fonts/Oswald.ttf") format("truetype");
+  src: url("https://real-archaeology.com/fonts/Oswald.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +20,7 @@
 /* Anton Font */
 @font-face {
   font-family: "Anton";
-  src: url("/fonts/Anton.ttf") format("truetype");
+  src: url("https://real-archaeology.com/fonts/Anton.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -228,34 +229,7 @@ body {
 
 /* Event Section Styling */
 .event-section {
-  background-image: url("path-to-your-image.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 0;
-  position: relative;
-}
-
-/* Event Header Box */
-.event-header-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.event-header-box h2 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #000;
-}
-
-/* Event Section Styling */
-.event-section {
-  background-image: url("https://via.placeholder.com/1920x1080");
+  background-image: url("event-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -9,16 +9,16 @@ const speakersList = [
     link: "https://diggingupancientaliens.com/",
   },
   {
-    name: "Prof. John Doe",
+    name: "Dr Flint Dibble",
     image: "https://via.placeholder.com/120",
-    channel: "Ancient World Channel",
-    link: "https://www.example.com/john-doe",
+    channel: "Archaeology with Flint Dibble",
+    link: "https://www.youtube.com/flintdibble",
   },
   {
-    name: "Dr. Emily Johnson",
+    name: "Dr. Bill Farley",
     image: "https://via.placeholder.com/120",
-    channel: "Digging Deep",
-    link: "https://www.example.com/emily-johnson",
+    channel: "Archaeology Tube",
+    link: "https://www.youtube.com/@ArchaeologyTube",
   },
   {
     name: "Mr. Michael Brown",
