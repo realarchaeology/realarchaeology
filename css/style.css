@@ -229,7 +229,7 @@ body {
 
 /* Event Section Styling */
 .event-section {
-  background-image: url("event-bg.jpg");
+  background-image: url("https://real-archaeology.com/img/event-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
