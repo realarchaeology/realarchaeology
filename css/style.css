@@ -122,7 +122,7 @@
 /* Subheading Styling */
 .carousel-content .subheading {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem; /* Adjust as needed */
+  font-size: 3rem; /* Adjust as needed */
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
@@ -131,13 +131,24 @@
 .carousel-content h1 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
-  font-size: 4rem; /* Increase font size for larger heading */
+  font-size: 6rem; /* Increase font size for larger heading */
   /* margin-bottom: 1rem; */
 }
 
 /* Paragraph Styling */
 .carousel-content p {
   font-size: 1.25rem;
+}
+
+/* Media query for smaller screens (768px and below) */
+@media (max-width: 768px) {
+  .carousel-caption .subheading {
+    font-size: 1.6rem; /* Smaller subheading */
+  }
+
+  .carousel-caption h1 {
+    font-size: 3.2rem; /* Smaller main heading */
+  }
 }
 
 /* Adjust content under navbar */
@@ -331,15 +342,18 @@ body {
   .event-header-box,
   .event-content-box {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
   .event-header-box h2 {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+  }
+  .event-header-box h6 {
+    font-size: 2.5rem;
   }
 
   .event-content-box p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
