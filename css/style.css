@@ -7,6 +7,7 @@
     format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Oswald Font */
@@ -15,6 +16,7 @@
   src: url("https://real-archaeology.com/fonts/Oswald.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Anton Font */
@@ -23,6 +25,7 @@
   src: url("https://real-archaeology.com/fonts/Anton.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Customize navbar background color */
