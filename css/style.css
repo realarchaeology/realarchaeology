@@ -132,7 +132,7 @@
 
 /* Main Heading Styling */
 .carousel-content h1 {
-  font-family: "Anton", sans-serif;
+  font-family: "Anton", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 6rem; /* Increase font size for larger heading */
   /* margin-bottom: 1rem; */
