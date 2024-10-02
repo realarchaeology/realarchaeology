@@ -555,6 +555,12 @@ body {
     padding: 20px; /* Add padding to content on larger screens */
   }
 }
+@media (max-width: 576px) {
+  .schedule-header,
+  .schedule-content {
+    margin: 1rem;
+  }
+}
 
 /* Remove default margins and paddings from child elements if necessary */
 .schedule-section.full-height * {
@@ -579,7 +585,7 @@ body {
 
 .schedule-header h2 {
   margin: 0 0 10px 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #000;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 700;
