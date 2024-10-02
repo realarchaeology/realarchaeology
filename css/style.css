@@ -1,5 +1,11 @@
 /* styles.css */
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 /* BebasNeue Font */
 @font-face {
   font-family: "BebasNeue";
@@ -360,6 +366,114 @@ body {
   }
 }
 
+/* Organizers Section Styling */
+.organizers-section {
+  background-color: #a8120d; /* Red background */
+  padding: 60px 0;
+  color: #fff; /* Default text color */
+}
+
+.organizers-section .organizers-header {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  border-radius: 10px;
+}
+
+.organizers-section .organizers-header h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.organizers-section .organizers-header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.organizers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.organizer-card {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: calc(25% - 20px); /* Four cards per row */
+  max-width: 250px;
+}
+
+.organizer-card img {
+  width: 100%;
+  height: auto;
+}
+
+.organizer-info {
+  padding: 15px;
+}
+
+.organizer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.organizer-channel {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Single Contact Button Styling */
+.organizers-contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #fff; /* White background */
+  color: #a8120d; /* Red text */
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #8e0f0b;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .organizer-card {
+    width: calc(33.333% - 20px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .organizer-card {
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .organizer-card {
+    width: 100%; /* One card per row */
+  }
+}
+
 /* Speakers Section Styling */
 #speakers h2 {
   font-size: 5.1rem;
@@ -407,56 +521,93 @@ body {
   text-decoration: underline;
 }
 
-/* Section Header Styling */
-#schedule .section-header {
-  background-color: #a8120d; /* Red background */
-  color: #fff; /* White text */
-  padding: 40px 0; /* Vertical padding */
-  text-align: center;
+/* Schedule Section Styling */
+/* Schedule Section Full-Screen Height */
+@media (min-width: 992px) {
+  /* Apply to screens wider than 992px (desktop) */
+  .schedule-section.full-height {
+    height: 100vh; /* Set height to 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+  }
 }
 
-#schedule .section-header h2 {
-  margin: 0;
-  font-size: 3.5rem;
-  font-weight: 700;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+/* Background Image */
+.schedule-section {
+  background-image: url("https://real-archaeology.com/img/carousel-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 60px 0; /* This padding is for smaller screens */
 }
 
-/* Schedule Section */
-#schedule {
-  padding: 0 0 60px 0; /* Remove top padding, keep bottom padding */
-}
-
-#schedule .schedule-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  padding: 40px 0; /* Add vertical padding */
-}
-
-#schedule .schedule-content {
-  flex: 1 1 100%;
-  max-width: 100%;
-  padding: 0 20px; /* Horizontal padding */
+/* Centering Content */
+.schedule-header,
+.schedule-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
-  #schedule .schedule-image {
-    flex: 0 0 20%;
-    max-width: 20%;
+  .schedule-header,
+  .schedule-content {
+    padding: 20px; /* Add padding to content on larger screens */
   }
+}
 
-  #schedule .schedule-content {
-    flex: 0 0 60%;
-    max-width: 60%;
-    padding: 0 20px;
+/* Remove default margins and paddings from child elements if necessary */
+.schedule-section.full-height * {
+  box-sizing: border-box;
+}
+
+.schedule-header {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .schedule-header,
+  .schedule-content {
+    max-width: 800px;
   }
+}
+
+.schedule-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.schedule-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Schedule Content */
+.schedule-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
 }
 
 /* Day Buttons */
 .day-buttons {
   text-align: center;
-  margin-bottom: 30px; /* Increase bottom margin */
+  margin-bottom: 30px;
 }
 
 .day-buttons .btn-day {
@@ -464,11 +615,16 @@ body {
   color: #fff;
   border: none;
   margin: 5px;
-  padding: 12px 20px; /* Increase padding */
+  padding: 12px 20px;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
-  font-size: 1rem; /* Increase font size */
+  font-size: 1rem;
+}
+
+.day-buttons .btn-day.active,
+.day-buttons .btn-day:hover {
+  background-color: #8e0f0b;
 }
 
 /* Schedule Details */
@@ -476,23 +632,32 @@ body {
   margin-top: 20px;
 }
 
+.day-schedule {
+  display: block;
+}
+
+.day-schedule.d-none {
+  display: none;
+}
+
+/* Time Slots */
 .time-slot {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: 15px 0; /* Increase vertical padding */
+  align-items: center;
+  padding: 15px 0;
 }
 
 .time-slot .time {
-  flex: 0 0 25%; /* Increase time width */
-  max-width: 25%;
+  flex: 0 0 20%;
+  max-width: 20%;
   font-weight: bold;
-  font-size: 1.1rem; /* Increase font size */
+  font-size: 1.1rem;
 }
 
 .time-slot .description {
-  flex: 0 0 75%; /* Adjust description width */
-  max-width: 75%;
+  flex: 0 0 80%;
+  max-width: 80%;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -503,10 +668,7 @@ body {
   margin: 0;
 }
 
-.schedule-details hr {
-  margin: 0; /* Ensure no extra margin */
-}
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .time-slot {
     flex-direction: column;
@@ -517,33 +679,6 @@ body {
   .time-slot .description {
     flex: 1 1 100%;
     max-width: 100%;
-  }
-}
-
-/* Images on Each Side */
-.schedule-image {
-  flex: 1 1 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.schedule-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-@media (min-width: 992px) {
-  .schedule-image {
-    flex: 0 0 20%; /* Adjust as needed */
-    max-width: 20%;
-    margin-bottom: 0;
-    height: auto;
-  }
-
-  .schedule-content {
-    flex: 0 0 60%;
-    max-width: 60%;
   }
 }
 

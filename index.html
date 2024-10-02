@@ -51,9 +51,20 @@
       type="font/ttf"
       crossorigin="anonymous"
     />
-    <link rel="preload" href="https://real-archaeology.com/fonts/Anton.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="https://real-archaeology.com/fonts/BebasNeue.ttf" as="font" type="font/ttf" crossorigin>
-
+    <link
+      rel="preload"
+      href="https://real-archaeology.com/fonts/Anton.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://real-archaeology.com/fonts/BebasNeue.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -174,11 +185,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="#event">Event</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link active" href="#schedule">Schedule</a>
-            </li>-->
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact</a>
+              <a class="nav-link active" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#organizers">Contact</a>
             </li>
           </ul>
         </div>
@@ -321,11 +332,221 @@
             <!-- End of Countdown Timer -->
           </div>
           <!-- View Agenda Button -->
-          <a href="" class="btn btn-agenda">Schedule TBD</a>
+          <a href="#schedule" class="btn btn-agenda">View the Schedule</a>
         </div>
       </div>
     </section>
     <!-- End of Event Section -->
+    <!-- Organizers Section -->
+    <section id="organizers" class="organizers-section">
+      <!-- Section Header -->
+      <div class="organizers-header">
+        <h2>Who are the Organizers?</h2>
+        <p>Get to know the team behind Real Archaeology</p>
+      </div>
+
+      <!-- Organizers Grid -->
+      <div class="container">
+        <div class="organizers-grid">
+          <!-- Organizer 1 -->
+          <div class="organizer-card">
+            <img src="img/F_Dibble_profile_24_m.jpg" alt="Dr. Flint Dibble" />
+            <div class="organizer-info">
+              <h3>Dr. Flint Dibble</h3>
+              <p class="organizer-channel">
+                <a
+                  href="https://www.youtube.com/flintdibble"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Archaeology with Flint Dibble</a
+                >
+              </p>
+              <p class="organizer-channel">Head Chair</p>
+            </div>
+          </div>
+          <!-- Organizer 2 -->
+          <div class="organizer-card">
+            <img
+              src="img/F_Trusohamn_profile_24_m.jpg"
+              alt="Fredrik Trusohamn"
+            />
+            <div class="organizer-info">
+              <h3>Fredrik Trusohamn</h3>
+              <p class="organizer-channel">
+                <a
+                  href="https://diggingupancientaliens.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Digging Up Ancient Aliens</a
+                >
+              </p>
+              <p class="organizer-channel">Webpage</p>
+            </div>
+          </div>
+          <!-- Organizer 3 -->
+          <div class="organizer-card">
+            <img
+              src="img/megalith_hunter_profile_24_m.jpg"
+              alt="Megalith Hunter"
+            />
+            <div class="organizer-info">
+              <h3>Megalith Hunter Laura</h3>
+              <p class="organizer-channel">
+                <a
+                  href="https://www.megalithhunter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Megalith Hunters</a
+                >
+              </p>
+              <p class="organizer-channel">Co-ordinator</p>
+            </div>
+          </div>
+          <!-- Organizer 4 -->
+          <div class="organizer-card">
+            <img src="https://via.placeholder.com/500" alt="Dan Fallu" />
+            <div class="organizer-info">
+              <h3>Dan Fallu</h3>
+              <p class="organizer-channel">
+                <a
+                  href="https://twitter.com/SoilManDan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@SoilManDan</a
+                >
+              </p>
+              <p class="organizer-channel">Graphic Design</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Contact Button -->
+        <div class="organizers-contact">
+          <a href="mailto:realarchaeologyteam@gmail.com" class="contact-button"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End of Organizers Section -->
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section full-height">
+      <!-- Background Image is applied via CSS -->
+
+      <!-- Section Header -->
+      <div class="schedule-header">
+        <h2>Event Schedule</h2>
+        <p>Join us for exciting sessions over three days</p>
+      </div>
+
+      <!-- Schedule Content -->
+      <div class="schedule-content">
+        <!-- Day Buttons -->
+        <div class="day-buttons">
+          <button class="btn btn-day active" data-day="day1">Day 1</button>
+          <button class="btn btn-day" data-day="day2">Day 2</button>
+          <button class="btn btn-day" data-day="day3">Day 3</button>
+        </div>
+
+        <!-- Schedule Details -->
+        <div class="schedule-details">
+          <!-- Day 1 Schedule -->
+          <div class="day-schedule" id="day1">
+            <!-- Time Slots -->
+            <div class="time-slot">
+              <div class="time">03:00 PM</div>
+              <div class="description">
+                Livestream - Introducing #RealArchaeology
+              </div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">4:00 PM</div>
+              <div class="description">Popular Archaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">06:00 PM</div>
+              <div class="description">People</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">08:00 PM</div>
+              <div class="description">Artifacts</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">10:00 PM</div>
+              <div class="description">Wildcard Archaeology</div>
+            </div>
+            <hr />
+            <!-- Add up to 5 time slots -->
+          </div>
+
+          <!-- Day 2 Schedule -->
+          <div class="day-schedule d-none" id="day2">
+            <!-- Time Slots Day 2 -->
+            <div class="time-slot">
+              <div class="time">02:00 PM</div>
+              <div class="description">Monuments</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">4:00 PM</div>
+              <div class="description">Prehistoric Archaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">06:00 PM</div>
+              <div class="description">Pseudoarchaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">08:00 PM</div>
+              <div class="description">Archaeology Today</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">10:00 PM</div>
+              <div class="description">Choose your own archaeology</div>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Day 3 Schedule -->
+          <div class="day-schedule d-none" id="day3">
+            <!-- Time Slots for Day 3 -->
+            <div class="time-slot">
+              <div class="time">02:00 PM</div>
+              <div class="description">Historical Archaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">4:00 PM</div>
+              <div class="description">Methods</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">06:00 PM</div>
+              <div class="description">Environment</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">09:00 PM</div>
+              <div class="description">Storytelling</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time">10:00 PM</div>
+              <div class="description">Archaeology for the future</div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Schedule Section -->
 
     <!-- Speakers Section -->
     <section id="speakers" class="section-spacing">
@@ -397,8 +618,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-white me-3"
-                aria-label="Visit Real Archaeology's facebook page"></a>
+                aria-label="Visit Real Archaeology's facebook page"
               >
+                >
                 <i class="fab fa-facebook fa-2x"></i>
               </a>
               <a
@@ -441,5 +663,8 @@
 
     <!-- Speakers Script -->
     <script src="js/speakers.js"></script>
+
+    <!-- Schedule Script -->
+    <script src="js/schedule.js"></script>
   </body>
 </html>
