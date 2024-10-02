@@ -1,7 +1,7 @@
 // js/countdown.js
 
 // Set the date we're counting down to (October 26, 2024, 12:00 PM UK time)
-const countDownDate = new Date("October 26, 2024 12:00:00 GMT+0100").getTime();
+const countDownDate = new Date("October 25, 2024 15:00:00 GMT+0100").getTime();
 
 // Update the count down every 1 second
 const countdownfunction = setInterval(function () {
