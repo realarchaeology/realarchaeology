@@ -436,7 +436,7 @@
         <h2>Event Schedule</h2>
         <p>
           Join us for exciting sessions over three days during archaeology
-          month! Note that all times are in UK UTC+1 time
+          month!
         </p>
       </div>
 
@@ -448,6 +448,13 @@
           <button class="btn btn-day" data-day="day2">26/10</button>
           <button class="btn btn-day" data-day="day3">27/10</button>
         </div>
+        <!-- Time Zone Buttons -->
+        <div class="timezone-buttons">
+          <button class="btn btn-timezone active" data-timezone="us">
+            US Time
+          </button>
+          <button class="btn btn-timezone" data-timezone="uk">UK Time</button>
+        </div>
 
         <!-- Schedule Details -->
         <div class="schedule-details">
@@ -455,60 +462,59 @@
           <div class="day-schedule" id="day1">
             <!-- Time Slots -->
             <div class="time-slot">
-              <div class="time">03:00 PM</div>
+              <div class="time" data-utc="2024-10-25T14:00:00Z">03:00 PM</div>
               <div class="description">
                 Livestream - Introducing #RealArchaeology
               </div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">4:00 PM</div>
+              <div class="time" data-utc="2024-10-25T15:00:00Z">4:00 PM</div>
               <div class="description">Popular Archaeology</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">06:00 PM</div>
+              <div class="time" data-utc="2024-10-25T17:00:00Z">06:00 PM</div>
               <div class="description">People</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">08:00 PM</div>
+              <div class="time" data-utc="2024-10-25T19:00:00Z">08:00 PM</div>
               <div class="description">Artifacts</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">10:00 PM</div>
+              <div class="time" data-utc="2024-10-25T21:00:00Z">10:00 PM</div>
               <div class="description">Wildcard Archaeology</div>
             </div>
             <hr />
-            <!-- Add up to 5 time slots -->
           </div>
 
           <!-- Day 2 Schedule -->
           <div class="day-schedule d-none" id="day2">
             <!-- Time Slots Day 2 -->
             <div class="time-slot">
-              <div class="time">02:00 PM</div>
+              <div class="time" data-utc="2024-10-26T13:00:00Z">02:00 PM</div>
               <div class="description">Monuments</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">4:00 PM</div>
+              <div class="time" data-utc="2024-10-26T15:00:00Z">4:00 PM</div>
               <div class="description">Prehistoric Archaeology</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">06:00 PM</div>
+              <div class="time" data-utc="2024-10-26T17:00:00Z">06:00 PM</div>
               <div class="description">Pseudoarchaeology</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">08:00 PM</div>
+              <div class="time" data-utc="2024-10-26T19:00:00Z">08:00 PM</div>
               <div class="description">Archaeology Today</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">10:00 PM</div>
+              <div class="time" data-utc="2024-10-26T21:00:00Z">10:00 PM</div>
               <div class="description">Choose your own archaeology</div>
             </div>
             <hr />
@@ -518,27 +524,27 @@
           <div class="day-schedule d-none" id="day3">
             <!-- Time Slots for Day 3 -->
             <div class="time-slot">
-              <div class="time">02:00 PM</div>
+              <div class="time" data-utc="2024-10-27T14:00:00Z">02:00 PM</div>
               <div class="description">Historical Archaeology</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">4:00 PM</div>
+              <div class="time" data-utc="2024-10-27T16:00:00Z">4:00 PM</div>
               <div class="description">Methods</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">06:00 PM</div>
+              <div class="time" data-utc="2024-10-27T18:00:00Z">06:00 PM</div>
               <div class="description">Environment</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">09:00 PM</div>
+              <div class="time" data-utc="2024-10-27T21:00:00Z">09:00 PM</div>
               <div class="description">Storytelling</div>
             </div>
             <hr />
             <div class="time-slot">
-              <div class="time">10:00 PM</div>
+              <div class="time" data-utc="2024-10-27T22:00:00Z">10:00 PM</div>
               <div class="description">Archaeology for the future</div>
             </div>
             <hr />

@@ -629,6 +629,29 @@ body {
   background-color: #8e0f0b;
 }
 
+/* Time Zone Buttons */
+.timezone-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-timezone {
+  background-color: #a8120d;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.btn-timezone.active,
+.btn-timezone:hover {
+  background-color: #8e0f0b;
+}
+
 /* Schedule Details */
 .schedule-details {
   margin-top: 20px;
