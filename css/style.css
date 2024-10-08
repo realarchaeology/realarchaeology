@@ -378,14 +378,11 @@ body {
 }
 
 .organizers-section .organizers-header h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  font-weight: 700;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 .organizers-section .organizers-header p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   margin: 0;
 }
@@ -403,8 +400,8 @@ body {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  width: calc(25% - 20px); /* Four cards per row */
-  max-width: 250px;
+  width: calc(20% - 20px); /* Five cards per row */
+  max-width: 200px;
 }
 
 .organizer-card img {
@@ -450,6 +447,12 @@ body {
 }
 
 /* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .organizer-card {
+    width: calc(25% - 20px); /* Four cards per row */
+  }
+}
+
 @media (max-width: 992px) {
   .organizer-card {
     width: calc(33.333% - 20px); /* Three cards per row */

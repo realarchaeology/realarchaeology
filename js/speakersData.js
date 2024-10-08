@@ -29,7 +29,7 @@ const speakers = [
     name: "Sebastian Wetherbee",
     image: "img/S_Wetherbee_profile_24_s.jpg",
     channel: "Lost Worlds",
-    link: "https://www.youtube.com/@lostworlds9565",
+    link: "https://www.youtube.com/@thetel",
   },
   {
     name: "Jens Notroff",
