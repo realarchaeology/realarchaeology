@@ -265,5 +265,41 @@ const speakers = [
     channel: "Tales From Aztlantis",
     link: "https://talesfromaztlantis.com",
   },
+  {
+    name: "Ancient Americas",
+    image: "img/A_Americas_24_s.jpg",
+    channel: "Ancient Americas",
+    link: "https://www.youtube.com/@AncientAmericas",
+  },
+  {
+    name: "David Ian Howe",
+    image: "img/D_Howe_24_s.jpg",
+    channel: "David Ian Howe",
+    link: "https://www.youtube.com/@davidianhowe",
+  },
+  {
+    name: "Nathanael Fosaaen",
+    image: "img/N_Fosaaen_24_s.jpg",
+    channel: "Nathanael Fosaaen",
+    link: "https://www.youtube.com/@NathanaelFosaaen",
+  },
+  {
+    name: "Steph Black",
+    image: "img/S_Black_24_s.jpg",
+    channel: "Steph the Archaeologist",
+    link: "https://www.tiktok.com/@archthot",
+  },
+  {
+    name: "Danny Tarell",
+    image: "img/D_Tarell_24_s.jpg",
+    channel: "The Crewe of the Fancy",
+    link: "https://www.youtube.com/@thecreweofthefancy",
+  },
+  {
+    name: "Matt Sibson",
+    image: "img/M_Sibson_24_s.jpg",
+    channel: "Ancient Architects",
+    link: "https://www.youtube.com/@AncientArchitects",
+  },
   // Add more speaker objects as needed
 ];
