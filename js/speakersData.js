@@ -38,7 +38,7 @@ const speakers = [
     link: "https://www.youtube.com/@jens2go",
   },
   {
-    name: "Dain Nelson",
+    name: "North02",
     image: "img/D_Nelson_profile_24_s.jpg",
     channel: "North02",
     link: "https://www.youtube.com/@NORTH02",
@@ -234,6 +234,36 @@ const speakers = [
     image: "img/R_Amun_profile_24_s.jpg",
     channel: "Inside Archaeology",
     link: "https://www.youtube.com/@Inside_Archaeology",
+  },
+  {
+    name: "Dr. Dale F. Simpson Jr.",
+    image: "img/D_Simpson_24_s.jpg",
+    channel: "Illinois Simpson Archaeology",
+    link: "https://www.youtube.com/@dfsj381",
+  },
+  {
+    name: "Raven Todd DaSilva",
+    image: "img/R_DaSilva_24_s.jpg",
+    channel: "Dig It With Raven",
+    link: "https://www.youtube.com/@DigItWithRaven",
+  },
+  {
+    name: "Kara Cooney",
+    image: "img/K_Cooney_24_s.jpg",
+    channel: "Afterlives of Ancient Egypt",
+    link: "https://karacooney.squarespace.com/podcast-afterlives",
+  },
+  {
+    name: "Jon F White",
+    image: "img/J_White_24_s.jpg",
+    channel: "Crecganford",
+    link: "https://www.youtube.com/@Crecganford",
+  },
+  {
+    name: "Kurly Tlapoyawa",
+    image: "img/K_Tlapoyawa_24_s.jpg",
+    channel: "Tales From Aztlantis",
+    link: "https://talesfromaztlantis.com",
   },
   // Add more speaker objects as needed
 ];
