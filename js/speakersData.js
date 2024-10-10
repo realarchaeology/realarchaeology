@@ -20,11 +20,12 @@ const speakers = [
     link: "https://www.youtube.com/@ArchaeologyTube",
   },
   {
-    name: "Kayleigh A.N. During",
-    image: "img/K_During_profile_24_s.jpg",
-    channel: "History With Kayleigh",
-    link: "https://www.youtube.com/historywithkayleigh",
+    name: "Milo Rossi",
+    image: "img/M_Rossi_24_s.jpg",
+    channel: "Miniminuteman",
+    link: "https://www.youtube.com/@miniminuteman773",
   },
+
   {
     name: "Sebastian Wetherbee",
     image: "img/S_Wetherbee_profile_24_s.jpg",
@@ -96,6 +97,12 @@ const speakers = [
     image: "img/Movies_We_Dig_profile_24_s.jpg",
     channel: "Movies We Dig",
     link: "https://www.movieswedig.com",
+  },
+  {
+    name: "Kayleigh A.N. During",
+    image: "img/K_During_profile_24_s.jpg",
+    channel: "History With Kayleigh",
+    link: "https://www.youtube.com/historywithkayleigh",
   },
   {
     name: "Alex Fitzpatrick",
