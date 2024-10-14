@@ -35,7 +35,7 @@ const speakersList = [
   },
   {
     name: "Annelise Baer",
-    image: "IMG_8778 copy - Annelise Baer.JPG",
+    image: "img/A_Baer_24_s.jpg",
     channel: "Annelise the Archaeologist",
     link: "hhttps://www.tiktok.com/@annelisethearchaeologist",
   },

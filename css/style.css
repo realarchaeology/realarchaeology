@@ -256,18 +256,19 @@ body {
   }
 
   .about-bg {
-    position: relative;
+    position: center;
     width: 100%;
     height: auto;
     padding: 30px 20px;
   }
 
   .about-bg h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .about-content {
     margin-left: 0;
+    margin-top: 170px;
     width: 100%;
     padding: 30px 20px;
   }
