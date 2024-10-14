@@ -25,7 +25,12 @@ const speakers = [
     channel: "Miniminuteman",
     link: "https://www.youtube.com/@miniminuteman773",
   },
-
+  {
+    name: "Annelise Baer",
+    image: "img/A_Baer_24_s.jpg",
+    channel: "Annelise the Archaeologist",
+    link: "hhttps://www.tiktok.com/@annelisethearchaeologist",
+  },
   {
     name: "Sebastian Wetherbee",
     image: "img/S_Wetherbee_profile_24_s.jpg",

@@ -34,6 +34,12 @@ const speakersList = [
     link: "https://www.youtube.com/@thetel",
   },
   {
+    name: "Annelise Baer",
+    image: "IMG_8778 copy - Annelise Baer.JPG",
+    channel: "Annelise the Archaeologist",
+    link: "hhttps://www.tiktok.com/@annelisethearchaeologist",
+  },
+  {
     name: "Jens Notroff",
     image: "img/J_Notroff_profile_24_s.jpg",
     channel: "Jens Notroff",
@@ -303,6 +309,7 @@ const speakersList = [
     channel: "Ancient Architects",
     link: "https://www.youtube.com/@AncientArchitects",
   },
+
   // Add more speaker objects as needed
 ];
 

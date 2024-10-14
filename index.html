@@ -264,26 +264,48 @@
     <!-- End of Carousel -->
 
     <!-- About Section -->
-    <section id="about" class="section-spacing">
-      <div
-        class="about-container d-flex flex-column flex-lg-row align-items-center"
-      >
-        <!-- Red Box with Heading -->
-        <div class="about-heading text-white">
+    <section id="about" class="about-section">
+      <div class="about-wrapper">
+        <!-- Red Background Column with Header -->
+        <div class="about-bg">
           <h2>
-            OUR <br />
-            STORY
+            <span>Our</span><br />
+            <span>Story</span>
           </h2>
         </div>
-        <!-- Paragraph Content -->
+        <!-- Content Column -->
         <div class="about-content">
-          <p>
-            We are a loose conglomeration of content creators who produce
-            fact-based mini-documentaries on archaeology. Our goal is to educate
-            the public on the wonders of the ancient past using peer-reviewed
-            sources. Get in touch if you're a science communicator and would
-            like to participate in one of our online events.
-          </p>
+          <div class="about-text">
+            <p>
+              Real Archaeology was started by a collective of online creators
+              who produce fact-based content about the past. Our goal is to
+              collaborate in creating, promoting, and sharing entertaining and
+              educational media with the wider public on the wonders of our
+              shared history.
+            </p>
+            <p>
+              We use peer-reviewed sources and our experience as researchers,
+              teachers, archaeologists, historians, and more to bring history to
+              life and make it accessible to as wide an audience as possible. As
+              a part of our efforts to spread our message, we have created the
+              Real Archaeology online event that spans three days in October.
+            </p>
+            <p>
+              During this time, our speakers will be releasing a myriad of
+              archaeology-related content across multiple platforms including
+              YouTube, TikTok, and Instagram. Follow our creators (list below)
+              or search <strong>#realarchaeology</strong> to find and engage
+              with our material.
+            </p>
+            <p class="call-to-action">
+              Please get in touch if you're a science communicator and would
+              like to participate in one of our online events.
+            </p>
+            <!-- Mailto Button -->
+            <div class="about-contact">
+              <a href="#organizers" class="contact-button">Contact Us</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -303,9 +325,11 @@
         <!-- Content Box with Paragraph, Countdown, and Button -->
         <div class="event-content-box">
           <p>
-            Join us during Archaeology Month! Over three days at the end of
-            October we will put fresh content out across YouTube, Spotify and
-            TikTok.
+            Join us during Archaeology Month! From the 25th to 27th of October
+            2024 our creators will be releasing fresh content on a wide variety
+            of archaeology-adjacent topics across YouTube, Spotify and TikTok.
+            This will include long and short form videos and livestreams. Below
+            you can find a schedule of the material due to be released.
           </p>
           <!-- Countdown Timer -->
           <div id="countdown">
@@ -337,6 +361,155 @@
       </div>
     </section>
     <!-- End of Event Section -->
+    <!-- Speakers Section -->
+    <section id="speakers" class="section-spacing">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Meet Our Speakers</h2>
+          <p>
+            Discover some of the amazing creators of archaeology and history
+            content
+          </p>
+        </div>
+        <div class="row" id="speakers-container">
+          <!-- Speakers will be injected here by JavaScript -->
+        </div>
+        <div class="text-center mt-4">
+          <a href="speakers.html" class="btn btn-agenda">View All Speakers</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Speakers Section -->
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section full-height">
+      <!-- Background Image is applied via CSS -->
+
+      <!-- Section Header -->
+      <div class="schedule-header">
+        <h2>Event Schedule</h2>
+        <p>
+          Below is a schedule of all the content that we have planned to
+          premiere over three days at the end of October. Hop onto a livestream
+          and ask us your questions with us in the chat, or watch a video on one
+          of our wide variety of topics covering archaeology, prehistory,
+          debunking pseudoarchaeology and more!
+        </p>
+      </div>
+
+      <!-- Schedule Content -->
+      <div class="schedule-content">
+        <!-- Day Buttons -->
+        <div class="day-buttons">
+          <button class="btn btn-day active" data-day="day1">25/10</button>
+          <button class="btn btn-day" data-day="day2">26/10</button>
+          <button class="btn btn-day" data-day="day3">27/10</button>
+        </div>
+        <!-- Time Zone Buttons -->
+        <div class="timezone-buttons">
+          <button class="btn btn-timezone active" data-timezone="us">
+            US EST Time
+          </button>
+          <button class="btn btn-timezone" data-timezone="uk">UK Time</button>
+        </div>
+
+        <!-- Schedule Details -->
+        <div class="schedule-details">
+          <!-- Day 1 Schedule -->
+          <div class="day-schedule" id="day1">
+            <!-- Time Slots -->
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-25T14:00:00Z">03:00 PM</div>
+              <div class="description">
+                Livestream - Introducing #RealArchaeology
+              </div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-25T15:00:00Z">4:00 PM</div>
+              <div class="description">Popular Archaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-25T17:00:00Z">06:00 PM</div>
+              <div class="description">People</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-25T19:00:00Z">08:00 PM</div>
+              <div class="description">Artifacts</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-25T21:00:00Z">10:00 PM</div>
+              <div class="description">Wildcard Archaeology</div>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Day 2 Schedule -->
+          <div class="day-schedule d-none" id="day2">
+            <!-- Time Slots Day 2 -->
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-26T13:00:00Z">02:00 PM</div>
+              <div class="description">Monuments</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-26T15:00:00Z">4:00 PM</div>
+              <div class="description">Prehistoric Archaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-26T17:00:00Z">06:00 PM</div>
+              <div class="description">Pseudoarchaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-26T19:00:00Z">08:00 PM</div>
+              <div class="description">Archaeology Today</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-26T21:00:00Z">10:00 PM</div>
+              <div class="description">Choose your own archaeology</div>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Day 3 Schedule -->
+          <div class="day-schedule d-none" id="day3">
+            <!-- Time Slots for Day 3 -->
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-27T14:00:00Z">02:00 PM</div>
+              <div class="description">Historical Archaeology</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-27T16:00:00Z">4:00 PM</div>
+              <div class="description">Methods</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-27T18:00:00Z">06:00 PM</div>
+              <div class="description">Environment</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-27T20:00:00Z">20:00 PM</div>
+              <div class="description">Storytelling</div>
+            </div>
+            <hr />
+            <div class="time-slot">
+              <div class="time" data-utc="2024-10-27T22:00:00Z">10:00 PM</div>
+              <div class="description">Archaeology for the future</div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Schedule Section -->
+
     <!-- Organizers Section -->
     <section id="organizers" class="organizers-section">
       <!-- Section Header -->
@@ -447,153 +620,6 @@
     </section>
     <!-- End of Organizers Section -->
 
-    <!-- Schedule Section -->
-    <section id="schedule" class="schedule-section full-height">
-      <!-- Background Image is applied via CSS -->
-
-      <!-- Section Header -->
-      <div class="schedule-header">
-        <h2>Event Schedule</h2>
-        <p>
-          Join us for exciting sessions over three days during archaeology
-          month!
-        </p>
-      </div>
-
-      <!-- Schedule Content -->
-      <div class="schedule-content">
-        <!-- Day Buttons -->
-        <div class="day-buttons">
-          <button class="btn btn-day active" data-day="day1">25/10</button>
-          <button class="btn btn-day" data-day="day2">26/10</button>
-          <button class="btn btn-day" data-day="day3">27/10</button>
-        </div>
-        <!-- Time Zone Buttons -->
-        <div class="timezone-buttons">
-          <button class="btn btn-timezone active" data-timezone="us">
-            US Time
-          </button>
-          <button class="btn btn-timezone" data-timezone="uk">UK Time</button>
-        </div>
-
-        <!-- Schedule Details -->
-        <div class="schedule-details">
-          <!-- Day 1 Schedule -->
-          <div class="day-schedule" id="day1">
-            <!-- Time Slots -->
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T14:00:00Z">03:00 PM</div>
-              <div class="description">
-                Livestream - Introducing #RealArchaeology
-              </div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T15:00:00Z">4:00 PM</div>
-              <div class="description">Popular Archaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T17:00:00Z">06:00 PM</div>
-              <div class="description">People</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T19:00:00Z">08:00 PM</div>
-              <div class="description">Artifacts</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T21:00:00Z">10:00 PM</div>
-              <div class="description">Wildcard Archaeology</div>
-            </div>
-            <hr />
-          </div>
-
-          <!-- Day 2 Schedule -->
-          <div class="day-schedule d-none" id="day2">
-            <!-- Time Slots Day 2 -->
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T13:00:00Z">02:00 PM</div>
-              <div class="description">Monuments</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T15:00:00Z">4:00 PM</div>
-              <div class="description">Prehistoric Archaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T17:00:00Z">06:00 PM</div>
-              <div class="description">Pseudoarchaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T19:00:00Z">08:00 PM</div>
-              <div class="description">Archaeology Today</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T21:00:00Z">10:00 PM</div>
-              <div class="description">Choose your own archaeology</div>
-            </div>
-            <hr />
-          </div>
-
-          <!-- Day 3 Schedule -->
-          <div class="day-schedule d-none" id="day3">
-            <!-- Time Slots for Day 3 -->
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T14:00:00Z">02:00 PM</div>
-              <div class="description">Historical Archaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T16:00:00Z">4:00 PM</div>
-              <div class="description">Methods</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T18:00:00Z">06:00 PM</div>
-              <div class="description">Environment</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T21:00:00Z">09:00 PM</div>
-              <div class="description">Storytelling</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T22:00:00Z">10:00 PM</div>
-              <div class="description">Archaeology for the future</div>
-            </div>
-            <hr />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Schedule Section -->
-
-    <!-- Speakers Section -->
-    <section id="speakers" class="section-spacing">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2>Meet Our Speakers</h2>
-          <p>
-            Discover some of the amazing creators of archaeology and history
-            content
-          </p>
-        </div>
-        <div class="row" id="speakers-container">
-          <!-- Speakers will be injected here by JavaScript -->
-        </div>
-        <div class="text-center mt-4">
-          <a href="speakers.html" class="btn btn-agenda">View All Speakers</a>
-        </div>
-      </div>
-    </section>
-    <!-- End of Speakers Section -->
-
     <!-- JavaScript for Day Switching -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -640,16 +666,15 @@
             <!-- Social Media Icons -->
             <div class="social-icons">
               <a
-                href="https://www.facebook.com/your-profile"
+                href="https://www.facebook.com/real.archaeology"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-white me-3"
                 aria-label="Visit Real Archaeology's facebook page"
               >
-                >
                 <i class="fab fa-facebook fa-2x"></i>
               </a>
-              <a
+              <!--<a
                 href="https://twitter.com/your-profile"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -657,8 +682,8 @@
                 aria-label="Visit Real Archaeology's Twitter/X page"
               >
                 <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a
+              </a>-->
+              <!--<a
                 href="https://www.instagram.com/your-profile"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -666,7 +691,7 @@
                 aria-label="Visit Real Archaeology's instagram page"
               >
                 <i class="fab fa-instagram fa-2x"></i>
-              </a>
+              </a>-->
             </div>
             <div class="text-center mb-4">
               <p>Copyright 2024</p>
