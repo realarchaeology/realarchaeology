@@ -34,7 +34,7 @@ const speakers = [
   {
     name: "Sebastian Wetherbee",
     image: "img/S_Wetherbee_profile_24_s.jpg",
-    channel: "Lost Worlds",
+    channel: "The Tel",
     link: "https://www.youtube.com/@thetel",
   },
   {
