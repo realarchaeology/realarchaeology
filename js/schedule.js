@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Speaker Schedule Array
   const speakerSchedule = [
     {
+      "Date and Time": "2024-10-25 15:00",
+      Topic: "Livestream - Introducing #RealArchaeology",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
       "Date and Time": "2024-10-25 16:00",
       Topic: "Stones in the River: Susquehannock Eel Weirs",
       Channel: "The Crewe of the Fancy",
@@ -29,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       "Date and Time": "2024-10-25 16:00",
-      Topic: "Easter Island ",
+      Topic: "Easter Island",
       Channel: "Illinois Simpson Archaeology",
       Link: "https://www.youtube.com/channel/UCK3ZceNCSjEQHwSc-CHB2HA",
     },
@@ -52,6 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
       Topic: "A Coffin Girl’s Guide to the Book of the Dead",
       Channel: "Ancient/Now",
       Link: "https://ancientnow.substack.com/p/a-coffin-girls-guide-to-the-book",
+    },
+    {
+      "Date and Time": "2024-10-25 16:00",
+      Topic: "Real Archaeology: How is it done?",
+      Channel: "The Archaeology Review",
+      Link: "https://ahotcupofjoe.net/2024/10/real-archaeology-how-is-it-done/",
     },
     {
       "Date and Time": "2024-10-25 18:00",
@@ -87,15 +99,23 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       "Date and Time": "2024-10-25 20:00",
       Topic:
-        "Charivari e antichi amuleti: Il fascino nascosto degli amuleti nelle Alpi",
+        "Charivari e antichi amuleti: Il fascino nascosto della tomba romana di Pförring",
       Channel: "Archeo Travelers",
       Link: "www.archeotravelers.com",
     },
     {
       "Date and Time": "2024-10-25 20:00",
-      Topic: "Excavating Mysteries: The Dogū Figures of Prehistoric Japan",
+      Topic:
+        "Excavating Mysteries: The Dogū Figures of Prehistoric Japan/Ancient Yamato: the Archaeology of Japan’s First State",
       Channel: "Tholos History",
       Link: "https://www.youtube.com/@tholoshistory",
+    },
+    {
+      "Date and Time": "2024-10-25 22:00",
+      Topic:
+        "Revisiting the ancient Maltese cart-ruts. Do they date to the Bronze Age or Classical Period?",
+      Channel: "MegalithHunter",
+      Link: "https://www.youtube.com/@MegalithHunter",
     },
     {
       "Date and Time": "2024-10-25 22:00",
@@ -112,121 +132,166 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       "Date and Time": "2024-10-25 22:00",
       Topic:
-        "Revisiting the ancient Maltese cart-ruts. Do they hold the key to the island’s Prehistory?",
-      Channel: "MegalithHunter",
-      Link: "https://www.youtube.com/@MegalithHunter",
-    },
-    {
-      "Date and Time": "2024-10-25 22:00",
-      Topic: "Why Do We Love (Plastic, Inaccurate) Skeletons so Much?",
+        "Why Do We Love (Plastic, Inaccurate) Skeletons So Much? A Halloween Investigation",
       Channel: "Animal Archaeology",
       Link: "https://animalarchaeology.com/",
     },
     {
-      "Date and Time": "2024-10-26 16:00",
-      Topic: "The Archaeology of Everyday Life in Ancient Greece",
-      Channel: "Athena Cultural Heritage",
-      Link: "https://www.youtube.com/@athenaheritage",
+      "Date and Time": "2024-10-26 14:00",
+      Topic: "Native American Mounds in North America",
+      Channel: "Actual Archaeology with JT",
+      Link: "https://www.youtube.com/@actualarchaeology",
     },
     {
-      "Date and Time": "2024-10-26 16:00",
+      "Date and Time": "2024-10-26 14:00",
       Topic:
-        "Let’s play Mesoamerican Ball! : Examining Archaeological Research Through Video Games",
-      Channel: "HereticusE",
-      Link: "https://www.youtube.com/@HereticusE",
+        "An Archaeological Tour Of Petra: The Ancient Marvel Carved In Stone",
+      Channel: "Inside Archaeology",
+      Link: "https://www.youtube.com/channel/UCu7oxHVBemRuErORN6P1R6w",
+    },
+    {
+      "Date and Time": "2024-10-26 14:00",
+      Topic:
+        "EVERYTHING You Know About Stone Circles is WRONG! - Long Meg and Her Daughters",
+      Channel: "Adam Morgan Ibbotson",
+      Link: "https://www.youtube.com/@AdamMorganIbbotson",
+    },
+    {
+      "Date and Time": "2024-10-26 14:00",
+      Topic: "Uncovering the Secrets of the Pyramids (Extended Edition)",
+      Channel: "The Past Macabre",
+      Link: "youtube.com/@past_macabre",
     },
     {
       "Date and Time": "2024-10-26 16:00",
-      Topic: "Her Majesty's Old Egyptian Garden",
-      Channel: "HereticusE",
-      Link: "https://www.youtube.com/@HereticusE",
+      Topic: "How do we make people love real archaeology?",
+      Channel: "Prehistorya Sanat",
+      Link: "https://www.instagram.com/prehistorya_sanat?igsh=dzcxYjNkdDc3Njk2",
+    },
+    {
+      "Date and Time": "2024-10-26 16:00",
+      Topic: "Iron Age Oman",
+      Channel: "Steph the Archaeologist",
+      Link: "https://www.tiktok.com/@archthot?lang=en",
+    },
+    {
+      "Date and Time": "2024-10-26 16:00",
+      Topic: "Ancient Yamato: the Archaeology of Japan’s First State",
+      Channel: "Tholos History",
+      Link: "https://www.youtube.com/@tholoshistory",
     },
     {
       "Date and Time": "2024-10-26 18:00",
-      Topic: "Disability, Archaeology, and Modern Storytelling",
-      Channel: "Disability in Archaeology",
-      Link: "https://www.tiktok.com/@disability_in_archaeology",
+      Topic: "Part of the Cycladic Corpus of Figures?",
+      Channel: "Looting Mattters",
+      Link: "https://lootingmatters.blogspot.com/",
     },
     {
       "Date and Time": "2024-10-26 18:00",
-      Topic: "Opening the World of Sumer",
-      Channel: "Anna the Archaeologist",
-      Link: "https://youtube.com/@anna_the_archaeologist",
+      Topic: "Real Pseudoarchaeology",
+      Channel: "Archaeology of the Mediterranean World",
+      Link: "https://mediterraneanworld.wordpress.com/",
+    },
+    {
+      "Date and Time": "2024-10-26 18:00",
+      Topic: "Kensington Runestone - Among River kings and hoaxes",
+      Channel: "Digging Up Ancient Aliens",
+      Link: "https://diggingupancientaliens.com/",
     },
     {
       "Date and Time": "2024-10-26 18:00",
       Topic:
-        "Mapping the New World: A Historiographical Approach to Understanding 17th Century Landscapes",
-      Channel: "Haunted Mapping",
-      Link: "https://www.youtube.com/@hauntedmapping",
+        "Direttamente dallo scavo archeologico (Directly from the archaeological excavation)",
+      Channel: "Archeomilla",
+      Link: "https://www.youtube.com/@Archeomilla",
     },
     {
-      "Date and Time": "2024-10-26 20:00",
-      Topic: "Charms and Ammulets",
-      Channel: "Archeo Travelers",
-      Link: "https://www.youtube.com/@ArcheoTravelers",
-    },
-    {
-      "Date and Time": "2024-10-26 20:00",
+      "Date and Time": "2024-10-26 18:00",
       Topic:
         "Shared Histories, Collective Futures: Why Public Outreach Matters to Me",
       Channel: "The Past Macabre",
       Link: "youtube.com/@past_macabre",
     },
     {
-      "Date and Time": "2024-10-26 22:00",
+      "Date and Time": "2024-10-26 20:00",
       Topic: "Trevor Wallace: The Menorca Shipwreck Project",
       Channel: "The Tel",
       Link: "https://youtube.com/@thetel?si=EDxVxveqTQ-elk9b",
     },
     {
-      "Date and Time": "2024-10-26 22:00",
+      "Date and Time": "2024-10-26 20:00",
       Topic: "ARCHEONEWS: 4 novità dal mondo dell'archeologia",
       Channel: "Archeo Wallace",
       Link: "https://www.instagram.com/archeo_wallace/",
     },
     {
-      "Date and Time": "2024-10-27 16:00",
+      "Date and Time": "2024-10-26 22:00",
+      Topic: "Episode 89: As Above, So Below (2014)",
+      Channel: "Screens of the Stone Age",
+      Link: "https://pasc-scpa.ca/sotsa",
+    },
+    {
+      "Date and Time": "2024-10-27 14:00",
       Topic: "L'Anse aux Meadows: The Norse in North America",
       Channel: "beakersdream",
       Link: "https://www.tiktok.com/@beakersdream",
     },
     {
-      "Date and Time": "2024-10-27 16:00",
-      Topic: "#RealArchaeology of New England ",
+      "Date and Time": "2024-10-27 14:00",
+      Topic: "#RealArchaeology of New England",
       Channel: "Archaeology Tube",
       Link: "https://www.youtube.com/@ArchaeologyTube",
     },
     {
-      "Date and Time": "2024-10-27 18:00",
+      "Date and Time": "2024-10-27 14:00",
+      Topic:
+        "Medieval stereotypes: Did people really live side-by-side with animals?",
+      Channel: "Fake History Hunter",
+      Link: "https://x.com/fakehistoryhunt",
+    },
+    {
+      "Date and Time": "2024-10-27 16:00",
       Topic:
         "Decaying Bones, the Flesh of Memory: Zooarchaeology at the Williams Spring Village",
       Channel: "Nathanael Fosaaen",
       Link: "https://www.youtube.com/channel/UCPtpx23uFPZQAHK7Ou_yvlQ",
     },
     {
-      "Date and Time": "2024-10-27 18:00",
+      "Date and Time": "2024-10-27 16:00",
       Topic: "PhD Research",
       Channel: "Steph the Archaeologist",
-      Link: "https://www.tiktok.com/@ &#8203;:contentReference[oaicite:0]{index=0}&#8203;  archthot?lang=en",
+      Link: "https://www.tiktok.com/@archthot?lang=en",
     },
     {
-      "Date and Time": "2024-10-27 20:00",
+      "Date and Time": "2024-10-27 18:00",
       Topic: "The Globe-Trotting Archaeology of Apples",
       Channel: "Dr. Smiti Nathan",
       Link: "https://youtube.com/@smitinathan",
     },
     {
-      "Date and Time": "2024-10-27 22:00",
+      "Date and Time": "2024-10-27 20:00",
       Topic: "Weaving her Story | Storytelling and Textiles",
       Channel: "Lady of the Library",
       Link: "https://www.youtube.com/cinziadubois",
     },
     {
-      "Date and Time": "2024-10-27 22:00",
-      Topic: "To be confirmed ",
-      Channel: "Tales From Aztlantis",
+      "Date and Time": "2024-10-27 20:00",
+      Topic: "To be confirmed",
+      Channel: "Tales From Azlantis",
       Link: "https://www.youtube.com/@TalesFromAztlantis",
+    },
+    {
+      "Date and Time": "2024-10-27 20:00",
+      Topic:
+        "Myths, Narratives and Iconography of Gobekli Tepe, Karahan Tepe, and Sayburc",
+      Channel: "",
+      Link: "https://www.youtube.com/@Crecganford",
+    },
+    {
+      "Date and Time": "2024-10-27 22:00",
+      Topic: "Archaeology For The Future",
+      Channel: "",
+      Link: "",
     },
   ];
 

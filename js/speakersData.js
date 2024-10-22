@@ -32,6 +32,12 @@ const speakers = [
     link: "hhttps://www.tiktok.com/@annelisethearchaeologist",
   },
   {
+    name: "Andrew Kinkella",
+    image: "img/A_Kinkella_24_s.jpg",
+    channel: "Kinkella Teaches Archaeology",
+    link: "https://www.youtube.com/@KinkellaTeachesArchaeology",
+  },
+  {
     name: "Sebastian Wetherbee",
     image: "img/S_Wetherbee_profile_24_s.jpg",
     channel: "The Tel",
