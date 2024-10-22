@@ -380,8 +380,9 @@
       </div>
     </section>
     <!-- End of Speakers Section -->
+
     <!-- Schedule Section -->
-    <section id="schedule" class="schedule-section full-height">
+    <section id="schedule" class="schedule-section">
       <!-- Background Image is applied via CSS -->
 
       <!-- Section Header -->
@@ -398,113 +399,22 @@
 
       <!-- Schedule Content -->
       <div class="schedule-content">
-        <!-- Day Buttons -->
-        <div class="day-buttons">
-          <button class="btn btn-day active" data-day="day1">25/10</button>
-          <button class="btn btn-day" data-day="day2">26/10</button>
-          <button class="btn btn-day" data-day="day3">27/10</button>
-        </div>
         <!-- Time Zone Buttons -->
         <div class="timezone-buttons">
           <button class="btn btn-timezone active" data-timezone="us">
-            US EST Time
+            US Time
           </button>
           <button class="btn btn-timezone" data-timezone="uk">UK Time</button>
         </div>
 
+        <!-- Day Buttons -->
+        <div class="day-buttons">
+          <!-- Day buttons will be generated dynamically -->
+        </div>
+
         <!-- Schedule Details -->
         <div class="schedule-details">
-          <!-- Day 1 Schedule -->
-          <div class="day-schedule" id="day1">
-            <!-- Time Slots -->
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T14:00:00Z">03:00 PM</div>
-              <div class="description">
-                Livestream - Introducing #RealArchaeology
-              </div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T15:00:00Z">4:00 PM</div>
-              <div class="description">Popular Archaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T17:00:00Z">06:00 PM</div>
-              <div class="description">People</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T19:00:00Z">08:00 PM</div>
-              <div class="description">Artifacts</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-25T21:00:00Z">10:00 PM</div>
-              <div class="description">Wildcard Archaeology</div>
-            </div>
-            <hr />
-          </div>
-
-          <!-- Day 2 Schedule -->
-          <div class="day-schedule d-none" id="day2">
-            <!-- Time Slots Day 2 -->
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T13:00:00Z">02:00 PM</div>
-              <div class="description">Monuments</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T15:00:00Z">4:00 PM</div>
-              <div class="description">Prehistoric Archaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T17:00:00Z">06:00 PM</div>
-              <div class="description">Pseudoarchaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T19:00:00Z">08:00 PM</div>
-              <div class="description">Archaeology Today</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-26T21:00:00Z">10:00 PM</div>
-              <div class="description">Choose your own archaeology</div>
-            </div>
-            <hr />
-          </div>
-
-          <!-- Day 3 Schedule -->
-          <div class="day-schedule d-none" id="day3">
-            <!-- Time Slots for Day 3 -->
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T14:00:00Z">02:00 PM</div>
-              <div class="description">Historical Archaeology</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T16:00:00Z">4:00 PM</div>
-              <div class="description">Methods</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T18:00:00Z">06:00 PM</div>
-              <div class="description">Environment</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T20:00:00Z">20:00 PM</div>
-              <div class="description">Storytelling</div>
-            </div>
-            <hr />
-            <div class="time-slot">
-              <div class="time" data-utc="2024-10-27T22:00:00Z">10:00 PM</div>
-              <div class="description">Archaeology for the future</div>
-            </div>
-            <hr />
-          </div>
+          <!-- Day schedules will be generated dynamically -->
         </div>
       </div>
     </section>
@@ -619,7 +529,22 @@
       </div>
     </section>
     <!-- End of Organizers Section -->
-
+    <!-- Introduction Video Section -->
+    <section id="intro-video" class="video-section">
+      <div class="container">
+        <h2>A Introduction to Real Archaeology</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/Kei9i9K5yrs?si=5Iy4ax-5dfFsvIAQ"
+            title="An Introduction to Real Archaeology"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- End of Introduction Video Section -->
     <!-- JavaScript for Day Switching -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -663,6 +588,7 @@
                 >realarchaeologyteam@gmail.com
               </a>
             </p>
+
             <!-- Social Media Icons -->
             <div class="social-icons">
               <a

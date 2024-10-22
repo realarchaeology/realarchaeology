@@ -737,6 +737,42 @@ body {
   margin: 0;
 }
 
+.day-heading {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.time-slot {
+  margin-bottom: 20px;
+}
+
+.time-slot .time {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.time-slot .topic {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.time-slot .channel a {
+  color: #a8120d;
+  text-decoration: none;
+}
+
+.time-slot .channel a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .time-slot {
@@ -788,5 +824,53 @@ body {
 @media (max-width: 576px) {
   .speaker-card {
     width: 100%; /* One card per row */
+  }
+}
+/* Introduction Video Section Styling */
+.video-section {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Optional: change or remove if desired */
+}
+
+.video-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 4.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .video-section h2 {
+    font-size: 2.5rem; /* Smaller font size on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .video-section h2 {
+    font-size: 2rem; /* Even smaller font size on mobile devices */
   }
 }

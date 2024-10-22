@@ -58,7 +58,7 @@ const speakers = [
   {
     name: "Carly Maris",
     image: "img/C_Maris_profile_24_s.jpg",
-    channel: "Underground History",
+    channel: "Vintage Histories",
     link: "https://www.tiktok.com/@vintagehistorian",
   },
   {
