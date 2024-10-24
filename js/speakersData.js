@@ -20,10 +20,22 @@ const speakers = [
     link: "https://www.youtube.com/@ArchaeologyTube",
   },
   {
+    name: "Prof. Chris Stringer",
+    image: "C_Stringer_profile_24_s.jpg",
+    channel: "Physical Anthropologist",
+    link: "",
+  },
+  {
     name: "Milo Rossi",
     image: "img/M_Rossi_24_s.jpg",
     channel: "Miniminuteman",
     link: "https://www.youtube.com/@miniminuteman773",
+  },
+  {
+    name: "Ken Feder",
+    image: "",
+    channel: "Ken Feder",
+    link: "https://x.com/fiftysitesbook?lang=en",
   },
   {
     name: "Annelise Baer",
@@ -318,6 +330,30 @@ const speakers = [
     image: "img/M_Sibson_24_s.jpg",
     channel: "Ancient Architects",
     link: "https://www.youtube.com/@AncientArchitects",
+  },
+  {
+    name: "Zane Blunt",
+    image: "462540877_1096543415156990_2562264039554502461_n - Zane.jpg",
+    channel: "liminalitytv",
+    link: "https://www.tiktok.com/@liminalitytv",
+  },
+  {
+    name: "Paul Whitewick",
+    image: "20240110_102150 - Paul Whitewick.jpg",
+    channel: "Paul Whitewick",
+    link: "https://www.youtube.com/@pwhitewick",
+  },
+  {
+    name: "Rick Pettigrew",
+    image: "YouTubeHeritageLogo - Richard Pettigrew.jpg",
+    channel: "Heritage Broadcasting Service",
+    link: "https://heritagetac.org",
+  },
+  {
+    name: "The North of Scotland Archaeological Society",
+    image: "NOSASlogononamev3 - NOSAS Secretary.png",
+    channel: "The North of Scotland Archaeological Society",
+    link: "https://nosasblog.wordpress.com/",
   },
   // Add more speaker objects as needed
 ];

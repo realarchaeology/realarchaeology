@@ -383,8 +383,6 @@
 
     <!-- Schedule Section -->
     <section id="schedule" class="schedule-section">
-      <!-- Background Image is applied via CSS -->
-
       <!-- Section Header -->
       <div class="schedule-header">
         <h2>Event Schedule</h2>
@@ -401,10 +399,10 @@
       <div class="schedule-content">
         <!-- Time Zone Buttons -->
         <div class="timezone-buttons">
-          <button class="btn btn-timezone active" data-timezone="us">
-            US EST Time
+          <button class="btn btn-timezone" data-timezone="us">US Time</button>
+          <button class="btn btn-timezone active" data-timezone="uk">
+            UK Time
           </button>
-          <button class="btn btn-timezone" data-timezone="uk">UK Time</button>
         </div>
 
         <!-- Day Buttons -->
@@ -414,7 +412,7 @@
 
         <!-- Schedule Details -->
         <div class="schedule-details">
-          <!-- Day schedules will be generated dynamically -->
+          <!-- Schedule will be generated dynamically -->
         </div>
       </div>
     </section>
@@ -643,5 +641,8 @@
 
     <!-- Schedule Script -->
     <script src="js/schedule.js"></script>
+
+    <!--Time and date convertion API-->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
   </body>
 </html>

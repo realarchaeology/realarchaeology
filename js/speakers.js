@@ -16,10 +16,22 @@ const speakersList = [
     link: "https://www.youtube.com/flintdibble",
   },
   {
+    name: "Prof. Chris Stringer",
+    image: "img/C_Stringer_profile_24_s.jpg",
+    channel: "Physical Anthropologist",
+    link: "",
+  },
+  {
     name: "Dr. Bill Farley",
     image: "img/B_Farley_profile_24_s.jpg",
     channel: "Archaeology Tube",
     link: "https://www.youtube.com/@ArchaeologyTube",
+  },
+  {
+    name: "Ken Feder",
+    image: "img/K_Feder_profile_24_s",
+    channel: "Ken Feder",
+    link: "https://x.com/fiftysitesbook?lang=en",
   },
   {
     name: "Kayleigh A.N. During",
@@ -314,6 +326,30 @@ const speakersList = [
     image: "img/M_Sibson_24_s.jpg",
     channel: "Ancient Architects",
     link: "https://www.youtube.com/@AncientArchitects",
+  },
+  {
+    name: "Zane Blunt",
+    image: "462540877_1096543415156990_2562264039554502461_n - Zane.jpg",
+    channel: "liminalitytv",
+    link: "https://www.tiktok.com/@liminalitytv",
+  },
+  {
+    name: "Paul Whitewick",
+    image: "20240110_102150 - Paul Whitewick.jpg",
+    channel: "Paul Whitewick",
+    link: "https://www.youtube.com/@pwhitewick",
+  },
+  {
+    name: "Rick Pettigrew",
+    image: "YouTubeHeritageLogo - Richard Pettigrew.jpg",
+    channel: "Heritage Broadcasting Service",
+    link: "https://heritagetac.org",
+  },
+  {
+    name: "The North of Scotland Archaeological Society",
+    image: "NOSASlogononamev3 - NOSAS Secretary.png",
+    channel: "The North of Scotland Archaeological Society",
+    link: "https://nosasblog.wordpress.com/",
   },
 
   // Add more speaker objects as needed

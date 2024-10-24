@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Time Zone Switching
   const timezoneButtons = document.querySelectorAll(".btn-timezone");
-  let currentTimezone = "us";
+  let currentTimezone = "uk"; // Set default to UK time
 
   // Event listener for time zone buttons
   timezoneButtons.forEach((button) => {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Speaker Schedule Array
+  // **Speaker Schedule Array**
   const speakerSchedule = [
     {
       "Date and Time": "2024-10-25 15:00",
@@ -293,6 +293,119 @@ document.addEventListener("DOMContentLoaded", function () {
       Channel: "",
       Link: "",
     },
+    {
+      "Date and Time": "2024-10-25 13:00",
+      Topic:
+        "Livestream - Neanderthals and Palaeolithic Humans with Chris Stringer",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-25 15:00",
+      Topic: "Livestream - Introducing #RealArchaeology with JT Lewis",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-25 18:00",
+      Topic: "Livestream - Addressing pseudoarchaeology with Ken Feder",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-25 18:00",
+      Topic: "Decoding Adolescence in the Human Skeleton with Creighton Avery",
+      Channel: "Peopling the Past",
+      Link: "https://peoplingthepast.com/",
+    },
+    {
+      "Date and Time": "2024-10-25 20:00",
+      Topic:
+        "Underground History segment with Chelsea Rose and Dr. Flint Dibble",
+      Channel: "NPR",
+      Link: "https://www.npr.org/podcasts/1152116260/underground-history",
+    },
+    {
+      "Date and Time": "2024-10-26 14:00",
+      Topic: "Footage of current excavations at Sayburç",
+      Channel: "History with Kayleigh",
+      Link: "https://www.youtube.com/@HistoryWithKayleigh",
+    },
+    {
+      "Date and Time": "2024-10-26 15:00",
+      Topic:
+        "Livestream - What are they really? Shaligram stories in an ammonite world with Dr Holly Walters",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-26 16:00",
+      Topic:
+        "Livestream - The genetic history of the ancient Romans with Dr. Hannah Moots",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-26 18:00",
+      Topic: "Livestream - Stories about really old dogs with David Ian Howe",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-26 19:00",
+      Topic: "Livestream - Quetzalcoatl with Dr Marijke Stoll",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-26 20:00",
+      Topic: "Bothan: Beehive Shieling Dwellings in Harris and Lewis",
+      Channel: "The North of Scotland Archaeological Society",
+      Link: "https://nosasblog.wordpress.com/2024/10/23/bothan-beehive-shieling-dwellings-in-harris-and-lewis/",
+    },
+    {
+      "Date and Time": "2024-10-26 22:00",
+      Topic: "Extinct Animals Encounters by the Neanderthals",
+      Channel: "North 02",
+      Link: "https://www.youtube.com/@NORTH02",
+    },
+    {
+      "Date and Time": "2024-10-27 16:00",
+      Topic: "Neolithic Carved Balls",
+      Channel: "Paul Whitewick",
+      Link: "https://www.youtube.com/@pwhitewick",
+    },
+    {
+      "Date and Time": "2024-10-27 16:00",
+      Topic:
+        "Livestream - UAAP: Unexplained Ancient Aliens Phenomena with Fredrik Trusohamn",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-27 18:00",
+      Topic: "Livestream - Human behavioral ecology with Nathaniel Fossaeen",
+      Channel: "Archaeology with Flint Dibble",
+      Link: "https://www.youtube.com/@FlintDibble",
+    },
+    {
+      "Date and Time": "2024-10-27 20:00",
+      Topic: "Baldur's Gate 3 - Druids, Henges and Springs #RealArchaeology",
+      Channel: "Life Of An Archaeologist",
+      Link: "http://www.archaeoblog.com",
+    },
+    {
+      "Date and Time": "2024-10-27 22:00",
+      Topic: "Rick Pettigrew",
+      Channel: "TBC",
+      Link: "https://heritagetac.org",
+    },
+    {
+      "Date and Time": "2024-10-27 22:00",
+      Topic: "Archaeology all around you and how to get involved",
+      Channel: "Open Past",
+      Link: "https://dougsarchaeology.wordpress.com/",
+    },
   ];
 
   // Function to generate the schedule
@@ -305,30 +418,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const eventsByDay = {};
 
     speakerSchedule.forEach((event) => {
-      // Parse the event date and time
-      const eventDateTime = new Date(event["Date and Time"].replace(" ", "T"));
+      try {
+        // Parse the event date and time as UK time
+        const eventDateTime = luxon.DateTime.fromFormat(
+          event["Date and Time"],
+          "yyyy-MM-dd HH:mm",
+          { zone: "Europe/London" }
+        );
 
-      // Adjust time zone if necessary
-      let dateOptions = {
-        timeZone:
-          currentTimezone === "us" ? "America/New_York" : "Europe/London",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        weekday: "long",
-      };
-      const dateFormatter = new Intl.DateTimeFormat("en-US", dateOptions);
-      const eventDate = dateFormatter.format(eventDateTime);
+        // Format the date for grouping
+        const eventDate = eventDateTime.setLocale("en-GB").toLocaleString({
+          weekday: "long",
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        });
 
-      if (!eventsByDay[eventDate]) {
-        eventsByDay[eventDate] = [];
+        if (!eventsByDay[eventDate]) {
+          eventsByDay[eventDate] = [];
+        }
+        eventsByDay[eventDate].push({ ...event, eventDateTime });
+      } catch (error) {
+        console.error("Error parsing date for event:", event, error);
       }
-      eventsByDay[eventDate].push(event);
     });
 
     // Sort days
     const sortedDays = Object.keys(eventsByDay).sort(
-      (a, b) => new Date(a) - new Date(b)
+      (a, b) =>
+        luxon.DateTime.fromFormat(a, "EEEE, d MMMM yyyy").toMillis() -
+        luxon.DateTime.fromFormat(b, "EEEE, d MMMM yyyy").toMillis()
     );
 
     // Create day schedules
@@ -348,50 +467,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Sort events by time
       eventsByDay[day].sort(
-        (a, b) => new Date(a["Date and Time"]) - new Date(b["Date and Time"])
+        (a, b) => a.eventDateTime.toMillis() - b.eventDateTime.toMillis()
       );
 
       eventsByDay[day].forEach((event) => {
-        const eventTime = new Date(event["Date and Time"].replace(" ", "T"));
-        let timeOptions = {
-          timeZone:
-            currentTimezone === "us" ? "America/New_York" : "Europe/London",
-          hour: "numeric",
-          minute: "numeric",
-          hour12: currentTimezone === "us",
-        };
-        const timeFormatter = new Intl.DateTimeFormat("en-US", timeOptions);
-        const localTime = timeFormatter.format(eventTime);
+        try {
+          // Adjust event time to the selected time zone
+          const timeZone =
+            currentTimezone === "us" ? "America/New_York" : "Europe/London";
+          const localEventTime = event.eventDateTime.setZone(timeZone);
 
-        // Create time slot
-        const timeSlot = document.createElement("div");
-        timeSlot.classList.add("time-slot");
+          const localTime = localEventTime.toLocaleString(
+            luxon.DateTime.TIME_SIMPLE
+          );
 
-        const timeDiv = document.createElement("div");
-        timeDiv.classList.add("time");
-        timeDiv.textContent = localTime;
+          // Create time slot
+          const timeSlot = document.createElement("div");
+          timeSlot.classList.add("time-slot");
 
-        const topicDiv = document.createElement("div");
-        topicDiv.classList.add("topic");
-        topicDiv.textContent = event.Topic;
+          const timeDiv = document.createElement("div");
+          timeDiv.classList.add("time");
+          timeDiv.textContent = localTime;
 
-        const channelDiv = document.createElement("div");
-        channelDiv.classList.add("channel");
-        const channelLink = document.createElement("a");
-        channelLink.href = event.Link;
-        channelLink.target = "_blank";
-        channelLink.textContent = event.Channel;
-        channelDiv.appendChild(channelLink);
+          const topicDiv = document.createElement("div");
+          topicDiv.classList.add("topic");
+          topicDiv.textContent = event.Topic;
 
-        timeSlot.appendChild(timeDiv);
-        timeSlot.appendChild(topicDiv);
-        timeSlot.appendChild(channelDiv);
+          const channelDiv = document.createElement("div");
+          channelDiv.classList.add("channel");
+          const channelLink = document.createElement("a");
+          channelLink.href = event.Link;
+          channelLink.target = "_blank";
+          channelLink.textContent = event.Channel;
+          channelDiv.appendChild(channelLink);
 
-        daySchedule.appendChild(timeSlot);
+          timeSlot.appendChild(timeDiv);
+          timeSlot.appendChild(topicDiv);
+          timeSlot.appendChild(channelDiv);
 
-        // Add a horizontal line between time slots
-        const hr = document.createElement("hr");
-        daySchedule.appendChild(hr);
+          daySchedule.appendChild(timeSlot);
+
+          // Add a horizontal line between time slots
+          const hr = document.createElement("hr");
+          daySchedule.appendChild(hr);
+        } catch (error) {
+          console.error("Error processing event:", event, error);
+        }
       });
 
       // Remove the last <hr>
