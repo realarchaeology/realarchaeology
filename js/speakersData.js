@@ -21,7 +21,7 @@ const speakers = [
   },
   {
     name: "Prof. Chris Stringer",
-    image: "C_Stringer_profile_24_s.jpg",
+    image: "img/C_Stringer_profile_24_s.jpg",
     channel: "Physical Anthropologist",
     link: "",
   },
@@ -33,7 +33,7 @@ const speakers = [
   },
   {
     name: "Ken Feder",
-    image: "",
+    image: "img/K_Feder_profile_24_s",
     channel: "Ken Feder",
     link: "https://x.com/fiftysitesbook?lang=en",
   },
