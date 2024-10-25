@@ -67,7 +67,7 @@ const speakerSchedule = [
     Topic:
       "Charivari e antichi amuleti: Il fascino nascosto degli amuleti nelle Alpi",
     Channel: "Archeo Travelers",
-    Link: "www.archeotravelers.com",
+    Link: "https://archeotravelers.com",
   },
   {
     "Date and Time": "2024-10-25 20:00",

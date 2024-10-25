@@ -230,10 +230,10 @@ const speakers = [
     link: "https://www.youtube.com/@smitinathan",
   },
   {
-    name: "Victoria Austen",
+    name: "Peopling the Past",
     image: "img/V_Austen_profile_24_s.jpg",
     channel: "Peopling the Past",
-    link: "https://www.youtube.com/@peoplingthepast7268",
+    link: "https://peoplingthepast.com/",
   },
   {
     name: "Michael Bott and Rupert Soskin",
