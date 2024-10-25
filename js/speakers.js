@@ -29,7 +29,7 @@ const speakersList = [
   },
   {
     name: "Ken Feder",
-    image: "img/K_Feder_profile_24_s",
+    image: "img/K_Feder_profile_24_s.jpg",
     channel: "Ken Feder",
     link: "https://x.com/fiftysitesbook?lang=en",
   },
@@ -329,25 +329,25 @@ const speakersList = [
   },
   {
     name: "Zane Blunt",
-    image: "462540877_1096543415156990_2562264039554502461_n - Zane.jpg",
+    image: "img/Z_Blunt_profile_24_s.jpg",
     channel: "liminalitytv",
     link: "https://www.tiktok.com/@liminalitytv",
   },
   {
     name: "Paul Whitewick",
-    image: "20240110_102150 - Paul Whitewick.jpg",
+    image: "img/P_Whitewick_profile_24_s.jpg",
     channel: "Paul Whitewick",
     link: "https://www.youtube.com/@pwhitewick",
   },
   {
     name: "Rick Pettigrew",
-    image: "YouTubeHeritageLogo - Richard Pettigrew.jpg",
+    image: "img/R_Pettigrew_profile_24_s.jpg",
     channel: "Heritage Broadcasting Service",
     link: "https://heritagetac.org",
   },
   {
     name: "The North of Scotland Archaeological Society",
-    image: "NOSASlogononamev3 - NOSAS Secretary.png",
+    image: "img/NOSAS_Secretary_profile_24_s.jpg",
     channel: "The North of Scotland Archaeological Society",
     link: "https://nosasblog.wordpress.com/",
   },
