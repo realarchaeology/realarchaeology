@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Date and Time": "2024-10-27 20:00",
       Topic:
         "Myths, Narratives and Iconography of Gobekli Tepe, Karahan Tepe, and Sayburc",
-      Channel: "",
+      Channel: "Crecganford",
       Link: "https://www.youtube.com/@Crecganford",
     },
     {
