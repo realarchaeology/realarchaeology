@@ -193,10 +193,11 @@ document.addEventListener("DOMContentLoaded", function () {
       Link: "https://mediterraneanworld.wordpress.com/",
     },
     {
-      "Date and Time": "2024-10-26 18:00",
-      Topic: "Kensington Runestone - Among River kings and hoaxes",
+      "Date and Time": "2024-10-26 20:00",
+      Topic:
+        "Runestones and monsters: The Intersection of Archaeology and Myth",
       Channel: "Digging Up Ancient Aliens",
-      Link: "https://diggingupancientaliens.com/",
+      Link: "https://www.youtube.com/watch?v=M7GqQfla7MQ",
     },
     {
       "Date and Time": "2024-10-26 18:00",
