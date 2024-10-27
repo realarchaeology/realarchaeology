@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       "Date and Time": "2024-10-25 20:00",
       Topic:
-        "Charivari e antichi amuleti: Il fascino nascosto della tomba romana di Pförring",
+        "Charivari e antichi amuleti: Il fascino nascosto della tomba romana",
       Channel: "Archeo Travelers",
-      Link: "www.archeotravelers.com",
+      Link: "https://archeotravelers.com",
     },
     {
       "Date and Time": "2024-10-25 20:00",
